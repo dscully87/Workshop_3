@@ -1,0 +1,3 @@
+{% for workshop in object_list %}
+<p><a href='{{ workshop.get_absolute_url }}'>{{ forloop.counter }}. {{ workshop.name }} - {{ workshop.host }}</a></p>
+{% endfor %}
